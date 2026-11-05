@@ -7,6 +7,10 @@ on:
   pull_request:
     branches: [master]
 
+# 添加这一行，赋予创建 Release 和上传资产所需权限
+permissions:
+  contents: write
+
 env:
   CARGO_TERM_COLOR: always
 
